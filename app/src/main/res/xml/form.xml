@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:paddingBottom="20px"
+        android:text="Register page"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/uname"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Username"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/edtuname"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/uname"
+        android:background="@drawable/logo"
+        android:ems="15" />
+    <TextView
+        android:id="@+id/upassword"
+
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/uname"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:text="Password"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/edtpassword"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtuname"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="-73dp"
+        android:layout_toRightOf="@+id/upassword"
+        android:background="@drawable/logo"
+        android:ems="15"
+        android:inputType="textPassword" />
+    <TextView
+        android:id="@+id/uaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/upassword"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Address"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/edtaddress"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtpassword"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="110dp"
+        android:layout_toRightOf="@+id/uaddress"
+        android:background="@drawable/logo"
+        android:ems="15" />
+    <TextView
+        android:id="@+id/ugender"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/uaddress"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Gender"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <RadioGroup
+        android:id="@+id/edtgender"
+
+
+
+
+
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <RadioButton
+        android:id="@+id/male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtaddress"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/ugender"
+        android:text="Male"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <RadioButton
+        android:id="@+id/female"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="female"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/male"
+        android:layout_below="@id/edtaddress"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        />
+    <TextView
+        android:id="@+id/uage"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ugender"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Age"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/edtage"
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/male"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="-73dp"
+        android:background="@drawable/logo"
+        android:layout_toRightOf="@+id/uaddress"
+        android:ems="15"
+        android:inputType="number" />
+    <TextView
+        android:id="@+id/udob"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/uage"
+
+
+
+
+
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="DOB"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+    <DatePicker
+        android:id="@+id/DatePick"
+        android:layout_width="296dp"
+        android:layout_height="296dp"
+        android:layout_below="@id/edtage"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginTop="85dp"
+        android:layout_toRightOf="@+id/uaddress"
+        android:datePickerMode="spinner"
+        android:ems="15" />
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DatePick"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="submit" />
+</RelativeLayout>
